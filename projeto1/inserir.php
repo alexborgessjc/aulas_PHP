@@ -24,7 +24,12 @@
     $resultado = mysqli_query($conexao,$sql_inserir);
 
     if($resultado){
-        echo "Enviado!";
+        ?>
+            <script>
+                alert("Enviado!");
+                window.location.replace("formulario.html");
+            </script>
+        <?php
     }else{
         echo "Não enviado";
     }

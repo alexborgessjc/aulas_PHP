@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
     <title>Página de Cadastro</title>
 </head>
 <body>
     <form action="inserir.php" method="POST">    
         <h1>Formulário de Aluno</h1><br>    
-        Digite o seu cpf:<input type="text" name="campo_cpf"><br>
-        Digite o seu nome:<input type="text" name="campo_nome"><br>
-        Digite o seu sexo:<input type="text" name="campo_sexo"><br>
-        Data de nascimento:<input type="date" name="campo_data"><br>
-        <button>Enviar</button>
+        Digite o seu cpf:<input type="text" name="campo_cpf"    ><br>
+        Digite o seu nome:<input type="text" name="campo_nome" required><br>
+        Digite o seu sexo:<input type="text" name="campo_sexo" required><br>
+        Data de nascimento:<input type="date" name="campo_data" required><br>
+        <button class="button">Botão</button>
     </form>
 </body>
 </html>
